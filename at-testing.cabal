@@ -1,0 +1,23 @@
+cabal-version:      3.0
+name:               at-testing
+version:            0.1.0.0
+license:            BSD-3-Clause
+license-file:       LICENSE
+author:             Javier Sagredo
+maintainer:         javier.sagredo@iohk.io
+category:           Data
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+
+common warnings
+    ghc-options: -Wall
+
+executable at-testing
+    import:           warnings
+
+    main-is:          Main.hs
+    build-depends:    base ^>=4.18.3.0, ghc-debug-client
+
+    hs-source-dirs:   app
+
+    default-language: Haskell2010
