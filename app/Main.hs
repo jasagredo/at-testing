@@ -1,7 +1,7 @@
 module Main where
 
 import GHC.Debug.Client 
-import GHC.Debug.Snapshots
+import GHC.Debug.Snapshot
 
 main :: IO ()
 main = withDebuggeeConnect "/tmp/ghc-debug" $ \e -> 
